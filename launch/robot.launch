@@ -6,5 +6,6 @@
 
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
         args="$(arg init_pose) -unpause -urdf -model lab_robot -param robot_description" respawn="false" output="screen" />
-
+  
+  <node pkg ="enph353_ros_lab" type="move.py" name="move" output="screen"/>
 </launch>
